@@ -44,11 +44,7 @@ test('Delete article', async ({ page, request }) => {
   expect(newArticleResponse.status()).toEqual(201);
 
     await page.goto('https://conduit.bondaracademy.com/')
-    await page.getByText('Sign in').click();
     
-    await page.getByRole('textbox', { name: 'Email' }).fill(email);
-    await page.getByRole('textbox', { name: 'Password' }).fill(password)
-    await page.getByRole('button', { name: 'Sign in' }).click()
     await expect(page.locator('.preview-link h1').first()).toContainText('Test new - apis')
     await page.getByText('Test new - apis').click()
     await page.getByRole('button', {name: 'Delete Article'}).first().click()
