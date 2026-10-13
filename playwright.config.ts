@@ -19,8 +19,8 @@ export default defineConfig({
   //   timeout: 5000
   // },
   testDir: './tests',
-  // Run the independent interview exercises with npm run test:practice.
-  testIgnore: '**/practice/**',
+  // Run the standalone GraphQL and accessibility tests with npm run test:examples.
+  testIgnore: '**/examples/**',
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */

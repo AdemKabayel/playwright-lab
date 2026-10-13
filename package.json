@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:practice": "playwright test --config=playwright.practice.config.ts",
-    "test:graphql": "npm run test:practice -- graphql.spec.ts",
-    "test:axe": "npm run test:practice -- accessibility.spec.ts"
+    "test:examples": "playwright test --config=playwright.examples.config.ts",
+    "test:graphql": "npm run test:examples -- graphql.spec.ts",
+    "test:axe": "npm run test:examples -- accessibility.spec.ts"
   },
   "keywords": [],
   "author": "",
